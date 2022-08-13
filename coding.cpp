@@ -2,30 +2,30 @@
 using namespace std;
 #include <string>
 
-// long long gcd(long a, long b)
-// {
-//     if (b==0)return a;
-//     return gcd(b, a % b);   
-// }
+long long gcd(long a, long b)
+{
+    if (b==0)return a;
+    return gcd(b, a % b);   
+}
 
-// vector<long long> divisors(long long num){
+vector<long long> divisors(long long num){
 
-// set <long long>numdiv;
-// for (int i=1;i<=sqrt(25);i++)
-// {
-//   if (num%i==0){
+set <long long>numdiv;
+for (int i=1;i<=sqrt(25);i++)
+{
+  if (num%i==0){
 
-//     // cout<<i<<endl;
+    // cout<<i<<endl;
    
-//     numdiv.insert(num/i);
-//     numdiv.insert(i);
+    numdiv.insert(num/i);
+    numdiv.insert(i);
 
-//   } 
+  } 
  
-// }
-// vector<long long> v(numdiv.begin(), numdiv.end());
-//  return v;
-// }
+}
+vector<long long> v(numdiv.begin(), numdiv.end());
+ return v;
+}
 
 int main(){
 //                                      ---My Approach---     
@@ -34,28 +34,17 @@ int main(){
 */      
  
 
-// long long x=21;
-// long long y=7;
+long long x=21;
+long long y=7;
 
-// vector<long long> abdo=divisors(x);
-// vector<long long> ginger=divisors(y);
-
-
-// for(auto n:ginger){
-//   cout<<n<<" ";
-// } 
+vector<long long> abdo=divisors(x);
+vector<long long> ginger=divisors(y);
 
 
+for(auto n:ginger){
+  cout<<n<<" ";
+} 
 
-string x;
-string vowls="aeiou";
-cin>>x;
-toupper(x[0]);
-
-for(auto n:x){
-
-  cout<<n-32;
-}
 
 
   return 0;
