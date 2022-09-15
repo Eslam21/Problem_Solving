@@ -1,0 +1,48 @@
+A. Madoka and Math Dad
+time limit per test 1 second
+memory limit per test 256 megabytes
+inputstandard input
+outputstandard output
+Madoka finally found the administrator password for her computer. Her father is a well-known popularizer of mathematics, so the password is the answer to the following problem.
+
+Find the maximum decimal number without zeroes and with no equal digits in a row, such that the sum of its digits is n.
+
+Madoka is too tired of math to solve it herself, so help her to solve this problem!
+
+Input
+Each test contains multiple test cases. The first line contains a single integer t (1≤t≤1000) — the number of test cases. Description of the test cases follows.
+
+The only line of each test case contains an integer n (1≤n≤1000) — the required sum of the digits.
+
+Output
+For each test case print the maximum number you can obtain.
+
+Example
+inputCopy
+5
+1
+2
+3
+4
+5
+outputCopy
+1
+2
+21
+121
+212
+Note
+The only numbers with the sum of digits equal to 2 without zeros are 2 and 11. But the last one has two ones in a row, so it's not valid. That's why the answer is 2.
+
+The only numbers with the sum of digits equal to 3 without zeros are 111, 12, 21, and 3. The first one has 2 ones in a row, so it's not valid. So the maximum valid number is 21.
+
+The only numbers with the sum of digits equals to 4 without zeros are 1111, 211, 121, 112, 13, 31, 22, and 4. Numbers 1111, 211, 112, 22 aren't valid, because they have some identical digits in a row. So the maximum valid number is 121.
+
+
+Answer key ：
+Because the title requires our number to be as large as possible , And there can be no consecutive repeated numbers , So let's make our answer as many digits as possible （ Instead of making everyone the biggest, such as 9, One 9 We can 3 Group （2,1） There are five more digits. Obviously, the final answer is bigger ）, So the key is how to make our answer with the longest number of digits without repetition ？ Then we can take 1,2 These two numbers repeat , To meet our requirements
+
+The next question is who will be the first to appear , Because we are equivalent to n How many can be divided 3 Then the remaining questions , And we want to maximize our number , It must be Jean 2 Priority is best , But if you are 2 1 In combination, if the remaining number is 1, The last number you appear must be 1, So in the end （1,1） Not satisfied with the question , If the remainder is 2 perhaps 0, that 2 1 The combination will be no problem , So when n%3 = 1, We are 1 2 Just combine .
+
+The idea is to make our number as large as possible so what combination of numbers would make it largest possible number ? it is grouping 1 and 2.
+For example 4 is 31 or 121, 9 is 3123 or 212121 and so on.
