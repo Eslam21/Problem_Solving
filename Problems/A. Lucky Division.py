@@ -1,6 +1,7 @@
                                 ##### The Approach #####
 """
-             
+    The input ranges from 1 to 1000 so whatever the lucky number is it will not exceed 777 because any number 
+    Beyond that it will not divide the number.
                                 
 """
 
@@ -29,7 +30,7 @@ def generate_lucky():
    return lucky
  
 num=int(input())
- 
+print(generate_lucky()) 
 if check_lucky(num)==True:
     print('YES')
 else:
