@@ -8,8 +8,6 @@ Codeforces is a platform where you can participate in programming contests, solv
 ### What's in this Repository
 This repository contains my solutions to various Codeforces problems I have solved so far. Each problem solution includes a `.txt` file with the problem statement and a corresponding `.py` or `.cpp` file with my solution.
 
-Sure, here's an example readme file with the problems list you provided and links to each problem:
-
 
 ## Problems Solved (so far!😄)
 
