@@ -6,7 +6,7 @@
 Codeforces is a platform where you can participate in programming contests, solve problems, and improve your coding skills. It's a great way to challenge yourself and see how you stack up against other programmers from around the world.
 
 ### What's in this Repository
-This repository contains my solutions to various Codeforces problems I have solved so far. Each problem solution includes a `.txt` file with the problem statement and a corresponding `.py` or `.cpp` file with my solution.
+This repository contains my [solutions](https://github.com/Eslam21/Problem_Solving/tree/main/Problems) to various Codeforces problems I have solved so far. Each problem solution includes a `.txt` file with the problem statement and a corresponding `.py` or `.cpp` file with my solution.
 
 
 ## Problems Solved (so far!😄)
